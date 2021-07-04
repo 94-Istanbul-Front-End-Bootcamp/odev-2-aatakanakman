@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hafta 2 Gun 2</title>
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+       
+        <div class="input-group">
+            <label id="ageLabel" style="display: none;"><input id="ageCheck" type="checkbox"  value="isActive">Reşit Olanları Listele</label>
+        </div>
+        <div class="input-group">
+            <label id="activeLabel" style="display: none;"><input id="activeCheck" type="checkbox"  value="age">Aktif olanları listele</label>
+        </div>
+        <div class="input-group">
+            <input id="inputText" maxlength="1" style="display: none;" type="text" placeholder="Harfi giriniz">
+        </div>
+        <div class="input-group">
+            <button class="filtrele" onclick="filterData('filter')" id="filterButton" style="display: none;">Filtrele</button>
+            <button class="getButton" onclick="fetchData()">Tüm Kullanıcıları Getir</button>
+        </div>
+        <ul class="list">
+            
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
